@@ -1,0 +1,340 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+.left{float: left;}
+.right{float: right;}
+.container{
+	padding-left: 7%;
+	padding-right: 7%;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	width: auto;
+	height: auto;
+	background: none;
+}
+.header .judul{
+	font-size: xx-large;
+	font-family: Quicksand;
+	padding: 1.5vw 0;
+	color: rgb(255,255,255);
+}
+.header .menu .list-menu{
+	margin: 1.4vw 0;
+	padding: 0.5vw 2vw;
+	font-family: Quicksand;
+	font-size: large;
+	font-weight: 500;
+	border: rgb(255,255,255) solid 1px;
+	border-radius: 100px;
+	background: rgb(255,255,255);
+}
+.header .menu .list-menu a{color: rgb(75,75,75);display: block;}
+.header .responsive-menu{font-size: 2.5em;color: white;padding: 1vw 0;display: none;}
+.header_pas_turun{
+	background: linear-gradient(to right, rgba(103,58,183,1), rgba(156,39,176,1));
+	box-shadow: rgba(0,0,0,0.3) 0 10px 20px -10px;
+	/*animation-name: transparentHeader;
+	animation-duration: 1s;*/
+}
+/*@keyframes transparentHeader{
+	from{background: linear-gradient(to right, rgba(103,58,183,0), rgba(156,39,176,0));}
+	to{background: linear-gradient(to right, rgba(103,58,183,1), rgba(156,39,176,1));}
+}*/
+.banner{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: none;
+	overflow: hidden;
+}
+.banner .grafik{
+	width: 100%;
+	height: 53vw;
+	background: linear-gradient(to right, #673ab7, #9c27b0);
+	transform: skewY(-20deg);
+	transform-origin: 0;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+	box-shadow: rgba(0,0,0,0.3) -2vw 5px 0 0;
+	animation-name: borderGrafik;
+	animation-duration: 1s;
+}
+
+@keyframes borderGrafik{
+	from{
+		border-bottom-left-radius: 0%;
+		border-bottom-right-radius: 0%;
+	}
+	to{
+		border-bottom-left-radius: 30%;
+		border-bottom-right-radius: 30%;
+	}
+}
+.banner .grafik img{
+	position: relative;
+	top: 37vw;
+	right: 5vw;
+	width: 40%;
+	transform: skewY(20deg);
+	animation-name: come_to_pc;
+	animation-duration: 3s;
+}
+@keyframes come_to_pc{
+	0%{top: 0;}
+	100%{top: 37vw;}
+}
+.banner .grafik2{
+	position: relative;
+	top: 10vw;
+	right: -43vw;
+	width: 80%;
+	height: 45vw;
+	background: linear-gradient(to left, #0ab7a7, #009688);
+	transform: skew(50deg, -20deg);
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	box-shadow: rgba(0,150,136,0.25) -1vw -1vw 0 0;
+	animation-name: bermain_radius;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.Responsive-bro{
+	position: relative;
+	z-index: 200;
+	left: 5vw;
+	top: 2vw;
+}
+.banner .title_banner{
+	position: relative;
+	top: 20vw;
+	left: 9vw;
+	font-size: 5em;
+	font-family: Roboto;
+	font-weight: bolder;
+	color: white;
+	transform: skewY(20deg);
+}
+.banner .title_banner p{padding: 0;margin: 0;}
+.banner .grafik2 .title_banner_2{
+	transform: skew(-50deg, 20deg);
+	text-align: right;
+	position: relative;
+	top: 7vw;
+	right: 33vw;
+	font-weight: bolder;
+	font-size: 3.5em;
+	font-family: Roboto;
+	color: white;
+}
+.banner .grafik2 .title_banner_2 p{padding: 0;margin: 0;}
+
+/* Ini Untuk Artikel */
+article{
+	width: 100%;
+	height: auto;
+	padding: 2vw 0;
+	text-align: center;
+	font-family: Roboto;
+	color: rgb(75,75,75);
+}
+article h1{font-size: 2em;}
+article .post{
+	width: 45%;
+	height: auto;
+	border-radius: 7px;
+	box-shadow: rgba(0,0,0,0.3) 0 10px 20px -10px;
+	display: inline-block;
+	margin: 2%;
+	overflow: hidden;
+}
+article .post img{width: 100%;}
+article .post button{
+	border: none;
+	padding: 1.5vw;
+	border-radius: 7px;
+	background: #4caf50;
+	font-family: Roboto;
+	font-size: normal;
+	color: white;
+	margin-bottom: 2vw;
+	outline-width: 0;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+article .post button:hover{opacity: 0.9}
+article .partner{
+	width: 25%;
+	height: auto;
+	border-radius: 7px;
+	box-shadow: rgba(0,0,0,0.3) 0 10px 20px -10px;
+	display: inline-block;
+	margin: 1%;
+	overflow: hidden;
+}
+article .partner img{width: 100%;}
+article .partner button{
+	border: none;
+	padding: 1.5vw;
+	border-radius: 7px;
+	background: #2196f3;
+	font-family: Roboto;
+	font-size: normal;
+	color: white;
+	margin-bottom: 2vw;
+	outline-width: 0;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+article .partner button:hover{opacity: 0.9}
+/* End of Article */
+
+.jaminan{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 2vw 0;
+	text-align: center;
+	background: white;
+	overflow: hidden;
+}
+.jaminan p{
+	font-family: Roboto;
+	font-size: 5em;
+	font-weight: bolder;
+	text-transform: capitalize;
+	background: linear-gradient(to right, #e91e63, #9c27b0);
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-ms-background-clip: text;
+	-ms-text-fill-color: transparent;
+	-o-background-clip: text;
+	-o-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	margin-bottom: 2vw;
+}
+.jaminan text{
+	font-family: Roboto;
+	font-weight: lighter;
+	font-size: x-large;
+	color: rgb(65,65,65);
+	margin-bottom: 3vw;
+}
+.jaminan img{
+	width: 100%;
+}
+
+
+/*footer*/
+
+.footer {
+	float: left;
+	width: 100%;
+	height: auto;
+	background: #326da8;
+	padding: 3vw 0;
+	text-align: center;
+}
+
+.footer img {
+	width: 100px;
+	margin-left: 5px;
+}
+
+.footer h1 {
+	font-size: small;
+	font-family: Roboto;
+}
+
+.footer p {
+  color: white;
+  font-size: small;
+  font-family: Roboto;
+}
+
+/*end footer*/
+
+@media screen and (max-width: 800px){
+	.banner .grafik img{width: 40%;top: 50vw;}
+	.banner .grafik{height: 80vw;}
+	.banner .title_banner{font-size: 4em;top: 30vw;}
+	@keyframes come_to_pc{
+		0%{top: 0;}
+		100%{top: 50vw;}
+	}
+	.Responsive-bro{width: 45%;top: 5vw;left: 2vw;}
+	.banner .grafik2{height: 50vw}
+	.banner .grafik2 .title_banner_2{font-size: 3em;right: 28vw;}
+	article .post{width: 100%;}
+	article .partner{width: 60%;}
+}
+@media screen and (max-width: 480px){
+	.banner .grafik img{width: 48%;}
+	.banner .grafik{height: 60vw;}
+	.header .menu{display: none;}
+	.header .responsive-menu{display: block;}
+	.header{background: linear-gradient(to right, #673ab7, #9c27b0);}
+	.banner .grafik{
+		height: 190vw;
+		border-bottom-left-radius: 0%;
+		border-bottom-right-radius: 0%;
+		animation: none;
+		box-shadow: none;
+	}
+	.banner .grafik img{
+		width: 75%;
+		right: 14vw;
+		top: 50vw;
+	}
+	.banner .title_banner{top: 53vw;left: 15vw;font-size: 4em;text-align: right;}
+	.banner .grafik2{float: right;width: 100%;right: -20vw;height: 60vw;}
+	.Responsive-bro{width: 90%;left: 4vw;}
+	.banner .grafik2 .title_banner_2{
+		font-size: 2.5em;
+		transform: skewX(-50deg);
+		top: 7vw;
+		right: 35vw;
+		text-shadow: rgba(0,0,0,0.6) -5px -1px 0;
+	}
+	article .post button{
+		padding: 3vw;
+		margin-bottom: 5vw;
+	}
+	article .partner{width: 100%;}
+	article .partner button{
+		padding: 3vw;
+		margin-bottom: 5vw;
+	}
+	.jaminan p{
+		font-size: 3em;
+		margin-bottom: 5vw;
+	}
+	.jaminan text{
+		font-size: large;
+		display: block;
+	}
+	.jaminan img{
+		position: relative;
+		left: -95%;
+		width: 200%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.banner .title_banner{top: 53vw;left: 10vw;font-size: 3.5em;}
+	.banner .grafik{height: 200vw;}
+	.banner .grafik2{float: right;width: 100%;right: -50vw;height: 100vw;}
+}

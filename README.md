@@ -1,2 +1,1 @@
-# DTS61
-tentang program DTS dan PROGATE
+# dtsg61
